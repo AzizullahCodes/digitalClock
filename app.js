@@ -1,44 +1,5 @@
-/* let now = new Date();
-let time = now.toLocaleTimeString();
-console.log(time)
-let show = document.getElementById('heading');
 
-setInterval(() => {
-    show.innerHTML = new Date().toLocaleTimeString()
-}, 1000); */
-
-
-
-/* let clock = document.getElementById("clock");
-
-function updateClock(){
-
-    let now = new Date();
-
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
-
-    // Add leading zero
-    if(hours < 10){
-        hours = "0" + hours;
-    }
-    if(minutes < 10){
-        minutes = "0" + minutes;
-    }
-    if(seconds < 10){
-        seconds = "0" + seconds;
-    }
-
-    clock.innerHTML = `${hours}:${minutes}:${seconds}`;
-}
-
-// Run every 1 second
-setInterval(updateClock, 1000);
-
-// Call once immediately
-updateClock(); */
-
+// function one
 let show = document.getElementById('heading')
 let t = document.getElementById('time')
 let duration = document.getElementById('ampm')
@@ -77,7 +38,7 @@ t.innerHTML = `${hours}:${minutes}:${seconds}`
 
 setInterval((clock),1000)
 clock()
-
+// second function
 let dating = document.getElementById('dating')
 function two(){
     let dt = new Date();
