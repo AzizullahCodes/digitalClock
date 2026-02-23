@@ -71,7 +71,7 @@ let currentDate = dt.getDate();
 console.log(currentDate);
 let currentYear = dt.getFullYear();
 console.log(currentYear)
-dating.innerHTML = `${currentMonth} ${currentDate}, ${currentYear} ${currentDay}`
+// dating.innerHTML = `${currentMonth} ${currentDate}, ${currentYear} ${currentDay}`
 document.getElementById('date').innerHTML = `${currentMonth} ${currentDate}, ${currentYear}`
 }
 two()
