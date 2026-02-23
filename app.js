@@ -42,6 +42,8 @@ updateClock(); */
 let show = document.getElementById('heading')
 let t = document.getElementById('time')
 let duration = document.getElementById('ampm')
+let twelve = document.getElementById('btn-12');
+let twentyFour = document.getElementById('btn-24');
 
 function clock(){
     let now = new Date();
@@ -69,6 +71,8 @@ function clock(){
     }
 // show.innerHTML = `${hours}:${minutes}:${seconds}`
 t.innerHTML = `${hours}:${minutes}:${seconds}`
+
+
 }
 
 setInterval((clock),1000)

@@ -106,3 +106,9 @@ main{
     justify-content: space-between;
     font-size: 12px;
 }
+ @media(max-width:500px){
+    .time{
+    font-size: 30px;
+    }
+    .ampm{font-size: 14px;}
+} 
