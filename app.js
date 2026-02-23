@@ -41,6 +41,7 @@ updateClock(); */
 
 let show = document.getElementById('heading')
 let t = document.getElementById('time')
+let duration = document.getElementById('ampm')
 
 function clock(){
     let now = new Date();
@@ -59,6 +60,12 @@ function clock(){
     }
     if(seconds < 10){
         seconds = '0' + seconds
+    }
+    if(hours >= 12){
+        duration.innerHTML = 'PM'
+    }
+    if(hours < 12){
+        duration.innerHTML = 'AM'
     }
 // show.innerHTML = `${hours}:${minutes}:${seconds}`
 t.innerHTML = `${hours}:${minutes}:${seconds}`
@@ -99,6 +106,7 @@ let currentDate = dt.getDate();
 console.log(currentDate);
 let currentYear = dt.getFullYear();
 console.log(currentYear)
-dating.innerHTML = `${currentMonth} ${currentDate}`
+dating.innerHTML = `${currentMonth} ${currentDate}, ${currentYear} ${currentDay}`
+document.getElementById('date').innerHTML = `${currentMonth} ${currentDate}, ${currentYear}`
 }
 two()
